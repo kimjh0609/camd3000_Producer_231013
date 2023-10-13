@@ -1,0 +1,4 @@
+// Microsoft Visual C++ generated Help ID include file.
+// Used by blueTest1.rc
+//
+#define HIDC_LOG_VIEWER                 0x806a03e9    // IDD_TUNEIT_PRODUCTION

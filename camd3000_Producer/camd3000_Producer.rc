@@ -1,0 +1,156 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CAMD3000_PRODUCTION DIALOGEX 0, 0, 450, 320
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "camd3000 Producer v2.0_20231012"
+FONT 13, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_LOGVIEWER,3,229,446,87,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL | NOT WS_TABSTOP
+    PUSHBUTTON      "OPEN",IDC_CONNECT,192,2,50,14,BS_CENTER
+    LTEXT           "COM Port",IDC_STATIC,16,7,32,10
+    LTEXT           "Baudrate",IDC_STATIC,102,7,32,10
+    COMBOBOX        IDC_COMBO_BAUARATE,131,5,53,57,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "CLEAR",IDC_CLEAR,243,2,50,14
+    COMBOBOX        IDC_COMBO_COM_PORT,48,5,53,69,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "APP",IDC_STATIC,7,35,27,9,SS_SUNKEN
+    LTEXT           "0.0.0.0",IDC_STATIC_APP_VERSION,39,35,105,9,SS_SUNKEN
+    LTEXT           "OBD",IDC_STATIC,7,47,27,8,SS_SUNKEN
+    LTEXT           "0.0.0.0",IDC_STATIC_OBD_VERSION,39,47,105,8,SS_SUNKEN
+    PUSHBUTTON      "JOB Start",IDC_BTN_HW_TEST,7,20,386,13
+    LTEXT           "UDR or QGPS 통신/감도",IDC_STATIC_ITEM,6,70,209,10,WS_BORDER
+    LTEXT           "",IDC_STATIC_UDR,224,70,209,10,WS_BORDER
+    LTEXT           "LTECATM1 통신",IDC_STATIC_ITEM3,6,82,209,10,WS_BORDER
+    LTEXT           "",IDC_STATIC_LTE,224,83,209,29,WS_BORDER
+    LTEXT           "eSIM",IDC_STATIC_ITEM5,5,117,209,9,WS_BORDER
+    LTEXT           "",IDC_STATIC_ESIM,224,116,209,10,WS_BORDER
+    LTEXT           "가속도센서",IDC_STATIC_ITEM9,5,131,209,9,WS_BORDER
+    LTEXT           "",IDC_STATIC_ACCEROMETER,224,130,209,10,WS_BORDER
+    LTEXT           "DB",IDC_STATIC,7,58,27,8,SS_SUNKEN
+    LTEXT           "0.0.0.0",IDC_STATIC_DB_VERSION,39,58,105,9,SS_SUNKEN
+    LTEXT           "OBD통신",IDC_STATIC_ITEM11,5,143,209,10,WS_BORDER
+    LTEXT           "",IDC_STATIC_OBDCOMM,224,143,209,11,WS_BORDER
+    LTEXT           "4개 LED(RED,WHITE,GREEN,ORANGE) 점등되어 있는가?",IDC_STATIC_LED,8,177,204,10,WS_DISABLED
+    CONTROL         "OK !",IDC_CHECK_LED,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,184,177,49,11
+    LTEXT           "SERIAL",IDC_STATIC_SERIAL,8,190,122,15,WS_BORDER
+    EDITTEXT        IDC_EDIT_SERIAL_NO,300,190,62,16,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "저장",IDC_BUTTON_SAVE,368,209,81,16,WS_DISABLED
+    LTEXT           "IMEI",IDC_STATIC,220,47,45,9,SS_SUNKEN
+    LTEXT           "",IDC_STATIC_IMEI,283,47,108,9,SS_SUNKEN
+    LTEXT           "ICCID",IDC_STATIC,220,59,45,9,SS_SUNKEN
+    LTEXT           "",IDC_STATIC_CCID,283,59,108,10,SS_SUNKEN
+    LTEXT           "BG96",IDC_STATIC,220,35,45,8,SS_SUNKEN
+    LTEXT           "",IDC_STATIC_MDM_VERSION,283,35,108,8,SS_SUNKEN
+    PUSHBUTTON      "결과 확인 요청",IDC_BUTTON_GETINFO,10,157,117,17
+    EDITTEXT        IDC_EDIT_SERIAL_INDEX,157,190,66,16,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SERIAL_MID,226,190,72,16,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "SN 설정",IDC_BUTTON_SET_SN,368,191,81,17
+    LTEXT           "BLE에서 SERIAL이 확인 되는가?",IDC_STATIC_LED2,8,208,161,14
+    CONTROL         "OK !",IDC_CHECK_BLE,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,184,210,49,11
+    PUSHBUTTON      "SET_JIG_MODE",IDC_BUTTON_SETJIGMODE,313,159,117,17,NOT WS_VISIBLE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CAMD3000_PRODUCTION, DIALOG
+    BEGIN
+        RIGHTMARGIN, 449
+        BOTTOMMARGIN, 316
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_CAMD3000_PRODUCTION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+IDI_ICON2               ICON                    "icon2.ico"
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
